@@ -4,6 +4,8 @@
  */
 package helloworldjava;
 
+import java.util.Scanner;
+
 import javax.print.attribute.SupportedValuesAttribute;
 
 /**
@@ -16,26 +18,21 @@ public class HelloWorldJava {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        // //int miVariableEntera = 10;
-        // //System.out.println(miVariableEntera);
-        // miVariableEntera = miVariableEntera + 5;
-        // System.out.println(miVariableEntera);
+        String nombre;
+        int id, precio;
+        Boolean envioGratuito;
+        Scanner input = new Scanner(System.in);
+        System.out.println("Proporcione el nombre");
+        nombre = input.nextLine();
+        System.out.println("Proporciona el id");
+        id = input.nextInt();
+        System.out.println("Proporciona el precio");
+        precio = input.nextInt();
+        System.out.println("Proporciona el envio gratiuto");
+        envioGratuito = input.nextBoolean();
 
-        // String miVariableString = "Mi nombre es Sebastian";
-        // System.out.println(miVariableString);
-        // miVariableString = "Y mi apellido es Naranjo";
-        // System.out.println(miVariableString);
-        
-        // var myVariable = "esto es una variable inferida";
-        // System.out.println(myVariable);
-
-        // // permitted ways to name a variable
-        // var $myVariable = 2;
-        // var _myVariable = 3;
-
-        var usuario = "juan";
-        var
+        System.out.println(nombre + " #" + id);
+        System.out.println("Precio: $" + precio);
+        System.out.println("Envio gratuito: " + envioGratuito);
     }
-
-    
 }
