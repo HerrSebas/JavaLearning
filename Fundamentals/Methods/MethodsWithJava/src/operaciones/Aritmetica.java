@@ -4,6 +4,15 @@ public class Aritmetica {
     int a;
     int b;
     
+    //Constructor vacio
+    public Aritmetica (){
+        System.out.println("Ejecutando constructor");
+    }
+    
+    public Aritmetica(int arg1, int arg2){
+        this.a = arg1;
+        this.b = arg2;
+    }
     //Metodo
     public void sumar(){
         int resultado = a + b;
